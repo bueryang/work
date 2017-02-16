@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/instruments.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/l1/siriwave.js" type="text/javascript"></script>
+</head>
+<body>
+<main>
+
+    <section id="wavebg" class="content content--highlight flexy flexy--center">
+        <canvas width="1347" height="321" style="width: 1347px; height: 321.094px;"></canvas><p class="content__highlight">And those who were seen dancing were thought to be insane by those who could not hear the music.<br><span class="tiny">—Friedrich Nietzsche</span></p>
+    </section>
+</main>
+</body>
+<script lang="javascript">
+    var siriWave = new SiriWave({
+        container: document.getElementById('wavebg'),
+        cover: true,
+        speed: 0.01,
+        color: '#4d61c5',
+        frequency: 3,
+        amplitude: 0.5,
+        autostart: true
+    });
+</script>
+</html>
